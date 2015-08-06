@@ -56,7 +56,8 @@ if arguments.count > 0
         }
         else
         {
-            text = text.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+//            text = text.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+            text = text.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())!
         }
         
         print(text)
