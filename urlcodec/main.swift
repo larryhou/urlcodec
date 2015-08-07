@@ -52,14 +52,12 @@ if arguments.count > 0
         var text = arguments.removeAtIndex(0)
         if decodeMode
         {
-            text = text.stringByReplacingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
+            text = text.stringByRemovingPercentEncoding!
         }
         else
         {
-//            text = text.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
             text = text.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())!
         }
-        
         print(text)
     }
 }

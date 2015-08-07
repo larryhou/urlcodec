@@ -63,7 +63,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "-h -d %e9%a6%96%e9%a1%b5%ef%bc%88%e8%ae%a1%e7%ae%97%e6%9c%ba%e5%85%ac%e5%8f%b8%e5%b9%bf%e4%b8%9c%e7%9c%81%ef%bc%89.jpg"
+            argument = "-d %e9%a6%96%e9%a1%b5%ef%bc%88%e8%ae%a1%e7%ae%97%e6%9c%ba%e5%85%ac%e5%8f%b8%e5%b9%bf%e4%b8%9c%e7%9c%81%ef%bc%89.jpg"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
