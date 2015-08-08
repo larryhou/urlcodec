@@ -10,9 +10,19 @@ import Foundation
 
 class ArgumentsManager
 {
-    struct ArgumentOption
+    class ArgumentOption
     {
         let name:String, abbr:String, help:String, hasValue:Bool, trigger:()->Void
+        var value:String?
+        
+        init(name:String, abbr:String, help:String, hasValue:Bool, trigger:()->Void)
+        {
+            self.name = name
+            self.abbr = abbr
+            self.help = help
+            self.hasValue = hasValue
+            self.trigger = trigger
+        }
     }
     
     private var map:[String:ArgumentOption]
