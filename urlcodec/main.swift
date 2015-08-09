@@ -13,10 +13,10 @@ var decodeMode = true, verbose = false
 var arguments = Process.arguments
 arguments = Array(arguments[1..<arguments.count])
 
-#if ENCODE_URI
-let manager = ArgumentsManager(name: "encodeURI", usageAppending: "URIString ...")
+#if CODEC_URI
+let manager = ArgumentsManager(name: "codecURI", usageAppending: "URIString ...")
 #else
-let manager = ArgumentsManager(name: "encodeURIComponent", usageAppending: "URIString ...")
+let manager = ArgumentsManager(name: "codecURIComponent", usageAppending: "URIString ...")
 #endif
 
 manager.insertOption("--encode-mode", abbr: "-e", help: "Use url encode mode to process", hasValue: false) { decodeMode = false }
@@ -65,7 +65,7 @@ func expandUnicodeString(range:String) -> String
 }
 
 var charactersInString = expandUnicodeString("a-z") + expandUnicodeString("A-Z") + expandUnicodeString("0-9") + "-_.!~*'()"
-#if ENCODE_URI
+#if CODEC_URI
 charactersInString += ";/?:@&=+$,#"
 #endif
 

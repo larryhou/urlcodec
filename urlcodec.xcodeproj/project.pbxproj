@@ -35,8 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6B72527D1B77669700B0219C /* encodeURI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = encodeURI; sourceTree = BUILT_PRODUCTS_DIR; };
-		6BF9A5891B6B66EC0099503B /* encodeURIComponent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = encodeURIComponent; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B72527D1B77669700B0219C /* codecURI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = codecURI; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BF9A5891B6B66EC0099503B /* codecURIComponent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = codecURIComponent; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BF9A58C1B6B66EC0099503B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6BF9A5931B6C7FB40099503B /* ArgumentsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArgumentsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,8 +70,8 @@
 		6BF9A58A1B6B66EC0099503B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6BF9A5891B6B66EC0099503B /* encodeURIComponent */,
-				6B72527D1B77669700B0219C /* encodeURI */,
+				6BF9A5891B6B66EC0099503B /* codecURIComponent */,
+				6B72527D1B77669700B0219C /* codecURI */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -88,9 +88,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6B7252741B77669700B0219C /* encodeURI */ = {
+		6B7252741B77669700B0219C /* codecURI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6B72527A1B77669700B0219C /* Build configuration list for PBXNativeTarget "encodeURI" */;
+			buildConfigurationList = 6B72527A1B77669700B0219C /* Build configuration list for PBXNativeTarget "codecURI" */;
 			buildPhases = (
 				6B7252751B77669700B0219C /* Sources */,
 				6B7252781B77669700B0219C /* Frameworks */,
@@ -100,14 +100,14 @@
 			);
 			dependencies = (
 			);
-			name = encodeURI;
+			name = codecURI;
 			productName = urlcodec;
-			productReference = 6B72527D1B77669700B0219C /* encodeURI */;
+			productReference = 6B72527D1B77669700B0219C /* codecURI */;
 			productType = "com.apple.product-type.tool";
 		};
-		6BF9A5881B6B66EC0099503B /* encodeURIComponent */ = {
+		6BF9A5881B6B66EC0099503B /* codecURIComponent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6BF9A5901B6B66EC0099503B /* Build configuration list for PBXNativeTarget "encodeURIComponent" */;
+			buildConfigurationList = 6BF9A5901B6B66EC0099503B /* Build configuration list for PBXNativeTarget "codecURIComponent" */;
 			buildPhases = (
 				6BF9A5851B6B66EC0099503B /* Sources */,
 				6BF9A5861B6B66EC0099503B /* Frameworks */,
@@ -117,9 +117,9 @@
 			);
 			dependencies = (
 			);
-			name = encodeURIComponent;
+			name = codecURIComponent;
 			productName = urlcodec;
-			productReference = 6BF9A5891B6B66EC0099503B /* encodeURIComponent */;
+			productReference = 6BF9A5891B6B66EC0099503B /* codecURIComponent */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -148,8 +148,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6BF9A5881B6B66EC0099503B /* encodeURIComponent */,
-				6B7252741B77669700B0219C /* encodeURI */,
+				6BF9A5881B6B66EC0099503B /* codecURIComponent */,
+				6B7252741B77669700B0219C /* codecURI */,
 			);
 		};
 /* End PBXProject section */
@@ -181,7 +181,7 @@
 			buildSettings = {
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
-				OTHER_SWIFT_FLAGS = "-D ENCODE_URI";
+				OTHER_SWIFT_FLAGS = "-D CODEC_URI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -191,7 +191,7 @@
 			buildSettings = {
 				DEPLOYMENT_LOCATION = YES;
 				DSTROOT = /;
-				OTHER_SWIFT_FLAGS = "-D ENCODE_URI";
+				OTHER_SWIFT_FLAGS = "-D CODEC_URI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -295,7 +295,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6B72527A1B77669700B0219C /* Build configuration list for PBXNativeTarget "encodeURI" */ = {
+		6B72527A1B77669700B0219C /* Build configuration list for PBXNativeTarget "codecURI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6B72527B1B77669700B0219C /* Debug */,
@@ -313,7 +313,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6BF9A5901B6B66EC0099503B /* Build configuration list for PBXNativeTarget "encodeURIComponent" */ = {
+		6BF9A5901B6B66EC0099503B /* Build configuration list for PBXNativeTarget "codecURIComponent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6BF9A5911B6B66EC0099503B /* Debug */,

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6B7252741B77669700B0219C"
-               BuildableName = "encodeURI"
-               BlueprintName = "encodeURI"
+               BlueprintIdentifier = "6BF9A5881B6B66EC0099503B"
+               BuildableName = "codecURIComponent"
+               BlueprintName = "codecURIComponent"
                ReferencedContainer = "container:urlcodec.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6B7252741B77669700B0219C"
-            BuildableName = "encodeURI"
-            BlueprintName = "encodeURI"
+            BlueprintIdentifier = "6BF9A5881B6B66EC0099503B"
+            BuildableName = "codecURIComponent"
+            BlueprintName = "codecURIComponent"
             ReferencedContainer = "container:urlcodec.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,9 +55,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6B7252741B77669700B0219C"
-            BuildableName = "encodeURI"
-            BlueprintName = "encodeURI"
+            BlueprintIdentifier = "6BF9A5881B6B66EC0099503B"
+            BuildableName = "codecURIComponent"
+            BlueprintName = "codecURIComponent"
             ReferencedContainer = "container:urlcodec.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -74,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6B7252741B77669700B0219C"
-            BuildableName = "encodeURI"
-            BlueprintName = "encodeURI"
+            BlueprintIdentifier = "6BF9A5881B6B66EC0099503B"
+            BuildableName = "codecURIComponent"
+            BlueprintName = "codecURIComponent"
             ReferencedContainer = "container:urlcodec.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
