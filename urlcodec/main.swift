@@ -13,7 +13,7 @@ var decodeMode = true, verbose = false
 var arguments = Process.arguments
 arguments = Array(arguments[1..<arguments.count])
 
-let manager = ArgumentsManager(name: "encodeURIComponent")
+let manager = ArgumentsManager(name: "encodeURIComponent", usageAppending: "URIString ...")
 manager.insertOption("--encode-mode", abbr: "-e", help: "Use url encode mode to process", hasValue: false) { decodeMode = false }
 manager.insertOption("--decode-mode", abbr: "-d", help: "Use url decode mode to process", hasValue: false) { decodeMode = true }
 manager.insertOption("--verbose", abbr: "-v", help: "Enable verbose printing", hasValue: false) { verbose = true }
