@@ -69,6 +69,11 @@ var charactersInString = expandUnicodeString("a-z") + expandUnicodeString("A-Z")
 charactersInString += ";/?:@&=+$,#"
 #endif
 
+if verbose
+{
+    print("characters: \(charactersInString)\ntotal: \(charactersInString.characters.count)")
+}
+
 let encodeCharacterSet = NSCharacterSet(charactersInString: charactersInString)
 
 if arguments.count > 0
