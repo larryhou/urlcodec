@@ -4,14 +4,24 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>urlcodec.xcscheme</key>
+		<key>encodeURI.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>encodeURIComponent.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>6B7252741B77669700B0219C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6BF9A5881B6B66EC0099503B</key>
 		<dict>
 			<key>primary</key>

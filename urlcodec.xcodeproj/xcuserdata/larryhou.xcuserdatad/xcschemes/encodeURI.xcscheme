@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6BF9A5881B6B66EC0099503B"
-               BuildableName = "encodeURIComponent"
-               BlueprintName = "encodeURIComponent"
+               BlueprintIdentifier = "6B7252741B77669700B0219C"
+               BuildableName = "encodeURI"
+               BlueprintName = "encodeURI"
                ReferencedContainer = "container:urlcodec.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6BF9A5881B6B66EC0099503B"
-            BuildableName = "encodeURIComponent"
-            BlueprintName = "encodeURIComponent"
+            BlueprintIdentifier = "6B7252741B77669700B0219C"
+            BuildableName = "encodeURI"
+            BlueprintName = "encodeURI"
             ReferencedContainer = "container:urlcodec.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -55,18 +55,12 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6BF9A5881B6B66EC0099503B"
-            BuildableName = "encodeURIComponent"
-            BlueprintName = "encodeURIComponent"
+            BlueprintIdentifier = "6B7252741B77669700B0219C"
+            BuildableName = "encodeURI"
+            BlueprintName = "encodeURI"
             ReferencedContainer = "container:urlcodec.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <CommandLineArguments>
-         <CommandLineArgument
-            argument = "-d %e9%a6%96%e9%a1%b5%ef%bc%88%e8%ae%a1%e7%ae%97%e6%9c%ba%e5%85%ac%e5%8f%b8%e5%b9%bf%e4%b8%9c%e7%9c%81%ef%bc%89.jpg"
-            isEnabled = "YES">
-         </CommandLineArgument>
-      </CommandLineArguments>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -80,9 +74,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6BF9A5881B6B66EC0099503B"
-            BuildableName = "encodeURIComponent"
-            BlueprintName = "encodeURIComponent"
+            BlueprintIdentifier = "6B7252741B77669700B0219C"
+            BuildableName = "encodeURI"
+            BlueprintName = "encodeURI"
             ReferencedContainer = "container:urlcodec.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

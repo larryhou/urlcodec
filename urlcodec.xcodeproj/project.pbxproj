@@ -7,11 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B7252761B77669700B0219C /* ArgumentsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF9A5931B6C7FB40099503B /* ArgumentsManager.swift */; };
+		6B7252771B77669700B0219C /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF9A58C1B6B66EC0099503B /* main.swift */; };
 		6BF9A58D1B6B66EC0099503B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF9A58C1B6B66EC0099503B /* main.swift */; };
 		6BF9A5941B6C7FB40099503B /* ArgumentsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF9A5931B6C7FB40099503B /* ArgumentsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		6B7252791B77669700B0219C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		6BF9A5871B6B66EC0099503B /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -24,12 +35,20 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6B72527D1B77669700B0219C /* encodeURI */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = encodeURI; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BF9A5891B6B66EC0099503B /* encodeURIComponent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = encodeURIComponent; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BF9A58C1B6B66EC0099503B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6BF9A5931B6C7FB40099503B /* ArgumentsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArgumentsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		6B7252781B77669700B0219C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6BF9A5861B6B66EC0099503B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				6BF9A5891B6B66EC0099503B /* encodeURIComponent */,
+				6B72527D1B77669700B0219C /* encodeURI */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,6 +88,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6B7252741B77669700B0219C /* encodeURI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B72527A1B77669700B0219C /* Build configuration list for PBXNativeTarget "encodeURI" */;
+			buildPhases = (
+				6B7252751B77669700B0219C /* Sources */,
+				6B7252781B77669700B0219C /* Frameworks */,
+				6B7252791B77669700B0219C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = encodeURI;
+			productName = urlcodec;
+			productReference = 6B72527D1B77669700B0219C /* encodeURI */;
+			productType = "com.apple.product-type.tool";
+		};
 		6BF9A5881B6B66EC0099503B /* encodeURIComponent */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BF9A5901B6B66EC0099503B /* Build configuration list for PBXNativeTarget "encodeURIComponent" */;
@@ -112,11 +149,21 @@
 			projectRoot = "";
 			targets = (
 				6BF9A5881B6B66EC0099503B /* encodeURIComponent */,
+				6B7252741B77669700B0219C /* encodeURI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6B7252751B77669700B0219C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B7252761B77669700B0219C /* ArgumentsManager.swift in Sources */,
+				6B7252771B77669700B0219C /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6BF9A5851B6B66EC0099503B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -129,6 +176,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		6B72527B1B77669700B0219C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				OTHER_SWIFT_FLAGS = "-D ENCODE_URI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6B72527C1B77669700B0219C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				OTHER_SWIFT_FLAGS = "-D ENCODE_URI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		6BF9A58E1B6B66EC0099503B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -228,6 +295,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6B72527A1B77669700B0219C /* Build configuration list for PBXNativeTarget "encodeURI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B72527B1B77669700B0219C /* Debug */,
+				6B72527C1B77669700B0219C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6BF9A5841B6B66EC0099503B /* Build configuration list for PBXProject "urlcodec" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
