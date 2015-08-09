@@ -9,6 +9,7 @@
 import Foundation
 
 var decodeMode = true, verbose = false
+var strictMode = false
 
 var arguments = Process.arguments
 arguments = Array(arguments[1..<arguments.count])
@@ -21,6 +22,7 @@ let manager = ArgumentsManager(name: "codecURIComponent", usageAppending: "URISt
 
 manager.insertOption("--encode-mode", abbr: "-e", help: "Use url encode mode to process", hasValue: false) { decodeMode = false }
 manager.insertOption("--decode-mode", abbr: "-d", help: "Use url decode mode to process", hasValue: false) { decodeMode = true }
+manager.insertOption("--strict-mode", abbr: "-s", help: "Use strict mode with price of performance", hasValue: false) { strictMode = true }
 manager.insertOption("--verbose", abbr: "-v", help: "Enable verbose printing", hasValue: false) { verbose = true }
 manager.insertOption("--help", abbr: "-h", help: "Show help message", hasValue: false)
 {
@@ -64,7 +66,16 @@ func expandUnicodeString(range:String) -> String
     return result
 }
 
-var charactersInString = expandUnicodeString("a-z") + expandUnicodeString("A-Z") + expandUnicodeString("0-9") + "-_.!~*'()"
+var charactersInString:String
+if strictMode
+{
+    charactersInString = expandUnicodeString("a-z") + expandUnicodeString("A-Z") + expandUnicodeString("0-9") + "-_.!~*'()"
+}
+else
+{
+    charactersInString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-_.!~*'()"
+}
+
 #if CODEC_URI
 charactersInString += ";/?:@&=+$,#"
 #endif
