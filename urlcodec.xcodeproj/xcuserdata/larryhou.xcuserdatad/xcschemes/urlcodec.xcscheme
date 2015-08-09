@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6BF9A5881B6B66EC0099503B"
-               BuildableName = "urlcodec"
-               BlueprintName = "urlcodec"
+               BuildableName = "encodeURIComponent"
+               BlueprintName = "encodeURIComponent"
                ReferencedContainer = "container:urlcodec.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6BF9A5881B6B66EC0099503B"
-            BuildableName = "urlcodec"
-            BlueprintName = "urlcodec"
+            BuildableName = "encodeURIComponent"
+            BlueprintName = "encodeURIComponent"
             ReferencedContainer = "container:urlcodec.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -56,8 +56,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6BF9A5881B6B66EC0099503B"
-            BuildableName = "urlcodec"
-            BlueprintName = "urlcodec"
+            BuildableName = "encodeURIComponent"
+            BlueprintName = "encodeURIComponent"
             ReferencedContainer = "container:urlcodec.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -81,8 +81,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6BF9A5881B6B66EC0099503B"
-            BuildableName = "urlcodec"
-            BlueprintName = "urlcodec"
+            BuildableName = "encodeURIComponent"
+            BlueprintName = "encodeURIComponent"
             ReferencedContainer = "container:urlcodec.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

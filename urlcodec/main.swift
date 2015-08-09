@@ -13,7 +13,7 @@ var decodeMode = true, verbose = false
 var arguments = Process.arguments
 arguments = Array(arguments[1..<arguments.count])
 
-let manager = ArgumentsManager()
+let manager = ArgumentsManager(name: "encodeURIComponent")
 manager.insertOption("--encode-mode", abbr: "-e", help: "Use url encode mode to process", hasValue: false) { decodeMode = false }
 manager.insertOption("--decode-mode", abbr: "-d", help: "Use url decode mode to process", hasValue: false) { decodeMode = true }
 manager.insertOption("--verbose", abbr: "-v", help: "Enable verbose printing", hasValue: false) { verbose = true }
@@ -45,6 +45,23 @@ if verbose
     print(Process.arguments)
 }
 
+func expandUnicodeString(range:String) -> String
+{
+    let from = range.unicodeScalars.startIndex
+    let to = from.successor().successor()
+    
+    var result = ""
+    for i in range.unicodeScalars[from].value...range.unicodeScalars[to].value
+    {
+        result.append(UnicodeScalar(i))
+    }
+    
+    return result
+}
+
+var charactersInString = expandUnicodeString("a-z") + expandUnicodeString("A-Z") + expandUnicodeString("0-9") + "-_.!~*'()"
+let encodeURICharacterSet = NSCharacterSet(charactersInString: charactersInString)
+
 if arguments.count > 0
 {
     while arguments.count > 0
@@ -56,8 +73,9 @@ if arguments.count > 0
         }
         else
         {
-            text = text.stringByAddingPercentEncodingWithAllowedCharacters(NSCharacterSet.URLHostAllowedCharacterSet())!
+            text = text.stringByAddingPercentEncodingWithAllowedCharacters(encodeURICharacterSet)!
         }
+        
         print(text)
     }
 }

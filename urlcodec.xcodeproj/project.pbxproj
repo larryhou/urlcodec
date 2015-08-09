@@ -24,7 +24,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6BF9A5891B6B66EC0099503B /* urlcodec */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = urlcodec; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BF9A5891B6B66EC0099503B /* encodeURIComponent */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = encodeURIComponent; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BF9A58C1B6B66EC0099503B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6BF9A5931B6C7FB40099503B /* ArgumentsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArgumentsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,7 +51,7 @@
 		6BF9A58A1B6B66EC0099503B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6BF9A5891B6B66EC0099503B /* urlcodec */,
+				6BF9A5891B6B66EC0099503B /* encodeURIComponent */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,9 +68,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6BF9A5881B6B66EC0099503B /* urlcodec */ = {
+		6BF9A5881B6B66EC0099503B /* encodeURIComponent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6BF9A5901B6B66EC0099503B /* Build configuration list for PBXNativeTarget "urlcodec" */;
+			buildConfigurationList = 6BF9A5901B6B66EC0099503B /* Build configuration list for PBXNativeTarget "encodeURIComponent" */;
 			buildPhases = (
 				6BF9A5851B6B66EC0099503B /* Sources */,
 				6BF9A5861B6B66EC0099503B /* Frameworks */,
@@ -80,9 +80,9 @@
 			);
 			dependencies = (
 			);
-			name = urlcodec;
+			name = encodeURIComponent;
 			productName = urlcodec;
-			productReference = 6BF9A5891B6B66EC0099503B /* urlcodec */;
+			productReference = 6BF9A5891B6B66EC0099503B /* encodeURIComponent */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -111,7 +111,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6BF9A5881B6B66EC0099503B /* urlcodec */,
+				6BF9A5881B6B66EC0099503B /* encodeURIComponent */,
 			);
 		};
 /* End PBXProject section */
@@ -237,7 +237,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6BF9A5901B6B66EC0099503B /* Build configuration list for PBXNativeTarget "urlcodec" */ = {
+		6BF9A5901B6B66EC0099503B /* Build configuration list for PBXNativeTarget "encodeURIComponent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6BF9A5911B6B66EC0099503B /* Debug */,
