@@ -120,7 +120,7 @@ class ArgumentsManager
             abbrs.append(options[i].abbr + (options[i].hasValue ? " OPTION_VALUE" : ""))
         }
         
-        fputs("Usage: \(self.name) " + " ".join(abbrs) + " \(usageAppending)\n", stream)
+        fputs("Usage: \(self.name) " + abbrs.joinWithSeparator(" ") + " \(usageAppending)\n", stream)
         
         for i in 0 ..< options.count
         {
